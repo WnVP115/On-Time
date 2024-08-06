@@ -140,14 +140,27 @@ body{
         justify-content: center;
     }
     .enlace_header{
-        font-size: 2.5rem;
-        margin-left: 4%;
+        font-size: 130%;
     }
     .main{
         flex-direction: column-reverse;
     }
+    .titulo_principal{
+        font-size: 140%;
+    }
     .contenidos{
         width: auto;
+        order: 1;
+        align-items: center;
+    }
+    .contenido_parrafo_1{
+        font-size: 110%;
+    }
+    .titulo_links{
+        font-size: 130%;
+    }
+    .link{
+        font-size: 100%;
     }
     .imagen_logo{
         order: 2;
@@ -157,8 +170,7 @@ body{
         margin-top: -10%;
         margin-left: 25%;
     }
-    .contenidos{
-        order: 1;
-        align-items: center;
+    .footer{
+        font-size: 100%;
     }
 }
