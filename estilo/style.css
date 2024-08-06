@@ -24,8 +24,8 @@
 }
 
 html, body {
-    height: 100%;
-    overflow: hidden;
+    height: auto;
+    scrollbar-width: none;
 }
 
 body{
@@ -120,15 +120,45 @@ body{
 
 .imagen_logo{
     width: 30%;
-    margin-top: -15%;
 }
 
 .footer{
     background-color: var(--color-7);
-    padding: 1.5rem;
+    padding: 2rem;
     color: var(--color-2);
     text-align: center;
     font-family: var(--fuente-josefin);
     font-size: 1.2rem;
     flex-shrink: 0;
+}
+
+@media (max-width: 1350px){
+    .header{
+        padding: 5%;
+    }
+    .header_menu{
+        justify-content: center;
+    }
+    .enlace_header{
+        font-size: 2.5rem;
+        margin-left: 4%;
+    }
+    .main{
+        flex-direction: column-reverse;
+    }
+    .contenidos{
+        width: auto;
+    }
+    .imagen_logo{
+        order: 2;
+        justify-items: center;
+        width: 50%;
+        margin-bottom: 5%;
+        margin-top: -10%;
+        margin-left: 25%;
+    }
+    .contenidos{
+        order: 1;
+        align-items: center;
+    }
 }
