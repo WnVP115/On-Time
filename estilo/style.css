@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Timmana&display=swap');
+
+
+:root{
+    --color-1: #272727;
+    --color-2: #ffffff;
+    --color-3: #000000;
+    --color-4: #38b6ff;
+    --color-5: #ff3131;
+    --color-6: #00bf63;
+    --color-7: #17153B;
+
+    --fuente-chewy: "Chewy", system-ui;
+    --fuente-josefin: "Josefin Sans", sans-serif;
+    --fuente-timmana: "Timmana", sans-serif;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    height: auto;
+}
+
+.header{
+    padding: 2% 0% 0% 5%;
+}
+
+.header_menu{
+    display: flex;
+    gap: 50px;
+}
+
+.enlace_header{
+    font-family: var(--fuente-timmana);
+    font-size: 1.5rem;
+    color: var(--color-6);
+    text-decoration: none;
+}
+
+.main{
+    padding: 5% 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contenidos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.titulo_principal{
+    font-size: 3rem;
+    font-family: var(--fuente-chewy);
+}
+
+.destaque_titulo{
+    color: var(--color-4)
+}
+
+.contenido_parrafo_1{
+    font-size: 1.5rem;
+    font-family: var(--fuente-josefin);
+}
+
+.parrafo_destaque{
+    color:  var(--color-6);
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo_links{
+    font-family: var(--fuente-timmana);
+    font-size: 2rem;
+}
+
+.link{
+    width: 40%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--color-6);
+    font-family: var(--fuente-josefin);
+    border: 2px solid var(--color-6);
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.link:hover{
+    background-color: var(--color-7);
+    color: var(--color-4);
+    border: 2px solid var(--color-4);
+}
+
+.imagen_logo{
+    width: 30%;
+    margin-top: -15%;
+}
+
+.footer{
+    background-color: var(--color-7);
+    padding: 1.5rem;
+    color: var(--color-2);
+    text-align: center;
+    font-family: var(--fuente-josefin);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
